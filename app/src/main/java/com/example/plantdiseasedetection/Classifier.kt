@@ -14,7 +14,6 @@ import kotlin.Comparator
 
 class Classifier(assetManager: AssetManager, modelPath: String, labelPath: String, inputSize: Int) {
     private var INTERPRETER: Interpreter
-    //private val GREAT_OUTCOME_MXX= 3
 
     private var LABEL_LIST: List<String>
     private val INPUT_SIZE: Int = inputSize
@@ -29,6 +28,7 @@ class Classifier(assetManager: AssetManager, modelPath: String, labelPath: Strin
         INTERPRETER = Interpreter(loadModelFile(assetManager, modelPath))
         LABEL_LIST = loadLabelList(assetManager, labelPath)
     }
+
     private fun loadModelFile(assetManager: AssetManager, modelPath: String): MappedByteBuffer {
         val fileDescriptor = assetManager.openFd(modelPath)
         val inputStream = FileInputStream(fileDescriptor.fileDescriptor)

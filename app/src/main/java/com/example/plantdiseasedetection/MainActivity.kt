@@ -194,6 +194,7 @@ class MainActivity : AppCompatActivity() {
                     val thumbnail = BitmapFactory.decodeFile(picturePath)
                     Log.w("path of image from gallery......******************.........","$picturePath")
                     mPhotoImageView.setImageBitmap(thumbnail)
+                    println("ok5")
                 }
             }
         }
