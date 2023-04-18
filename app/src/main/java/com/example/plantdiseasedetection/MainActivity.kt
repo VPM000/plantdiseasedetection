@@ -216,11 +216,3 @@ class MainActivity : AppCompatActivity() {
     // drawer when the icon is clicked
 
 
-
-
-
-
-
-// private const val REQUEST_CODE = 13
-//you can type a random number, this is not important
-
